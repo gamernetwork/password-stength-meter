@@ -2,7 +2,6 @@ var PasswordStrength = function(args) {
 
 	this.input = jQuery(args.input);
 	this.output = jQuery(args.output);
-	this.output.hide();
 	this.zxcvbn = args.zxcvbn || "https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.2/zxcvbn.js";
 
 	jQuery.getScript(this.zxcvbn);
