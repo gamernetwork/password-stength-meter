@@ -8,7 +8,8 @@ var PasswordStrength = function(args) {
 	jQuery.getScript(this.zxcvbn);
 
 	this.output.css({
-		display: "block",
+		position: "relative",
+		display: "none",
 		clear: "both"
 	});
 
@@ -49,6 +50,7 @@ var PasswordStrength = function(args) {
 
 		this.output.html("Password strength: <span>" + message + "</span>");
 		this.output.css({
+			display: "block",
 			color: colour
 		});
 	};
